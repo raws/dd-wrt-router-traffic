@@ -1,0 +1,30 @@
+!!!
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title Bandwidth
+    :css
+      body {
+        font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      #container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+
+      #chart {
+        height: 350px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+  %body
+    #container
+      %h1 Bandwidth
+      #chart
+      %script{type: 'text/javascript', src: 'http://www.google.com/jsapi'}
+      %script{type: 'text/javascript', src: 'chartkick.js'}
+      :javascript
+        new Chartkick.LineChart('chart', #{monthly_chart_data})

@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chartkick (1.1.0)
+    haml (4.0.3)
+      tilt
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chartkick (= 1.1.0)
+  haml (= 4.0.3)
